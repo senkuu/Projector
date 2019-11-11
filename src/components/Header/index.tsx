@@ -7,6 +7,15 @@ interface IHeaderProps {
   label: string;
 }
 
+const Header: React.FC<IHeaderProps> = props => {
+  return (
+    <View style={styles.headerView}>
+      <Text style={styles.projectName}>{props.label}</Text>
+      <AppBar />
+    </View>
+  );
+};
+
 const styles = StyleSheet.create({
   projectName: {
     fontSize: 24,
@@ -21,14 +30,5 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
   },
 });
-
-const Header: React.FC<IHeaderProps> = ({ label }) => {
-  return (
-    <View style={styles.headerView}>
-      <Text style={styles.projectName}>{label}</Text>
-      <AppBar />
-    </View>
-  );
-};
 
 export default Header;
