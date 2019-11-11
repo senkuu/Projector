@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-import 'assets/images/menu-bar.svg';
+import AppBar from './AppBar.svg';
 
 const styles = StyleSheet.create({
   projectName: {
@@ -14,6 +14,7 @@ const Header: React.FC = () => {
   return (
     <View>
       <Text style={styles.projectName}>Projector</Text>
+      <AppBar />
     </View>
   );
 };
