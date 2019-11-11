@@ -1,11 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+import 'assets/images/menu-bar.svg';
+
 const styles = StyleSheet.create({
   projectName: {
     fontSize: 24,
-    fontWeight: 'bold',
-    fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat-Bold',
   },
 });
 
