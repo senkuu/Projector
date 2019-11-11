@@ -3,6 +3,10 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import AppBar from './AppBar.svg';
 
+interface IHeaderProps {
+  label: string;
+}
+
 const styles = StyleSheet.create({
   projectName: {
     fontSize: 24,
@@ -18,10 +22,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Header: React.FC = () => {
+const Header: React.FC<IHeaderProps> = ({ label }) => {
   return (
     <View style={styles.headerView}>
-      <Text style={styles.projectName}>Projector</Text>
+      <Text style={styles.projectName}>{label}</Text>
       <AppBar />
     </View>
   );
