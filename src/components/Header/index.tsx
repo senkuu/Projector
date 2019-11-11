@@ -8,11 +8,19 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: 'Montserrat-Bold',
   },
+  headerView: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 15,
+    paddingVertical: 5,
+  },
 });
 
 const Header: React.FC = () => {
   return (
-    <View>
+    <View style={styles.headerView}>
       <Text style={styles.projectName}>Projector</Text>
       <AppBar />
     </View>
