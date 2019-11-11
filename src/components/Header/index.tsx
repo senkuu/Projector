@@ -1,10 +1,18 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  projectName: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    fontFamily: 'Montserrat',
+  },
+});
 
 const Header: React.FC = () => {
   return (
     <View>
-      <Text>Projector</Text>
+      <Text style={styles.projectName}>Projector</Text>
     </View>
   );
 };
