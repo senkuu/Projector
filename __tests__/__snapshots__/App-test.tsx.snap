@@ -3,7 +3,15 @@
 exports[`renders correctly 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      style={
+        Object {
+          "fontFamily": "Montserrat",
+          "fontSize": 24,
+          "fontWeight": "bold",
+        }
+      }
+    >
       Projector
     </Text>
   </View>
