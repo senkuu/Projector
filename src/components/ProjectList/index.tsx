@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 
 import Project from './components/Project';
 
@@ -10,9 +10,16 @@ interface props {
   projects: Array<IProject>;
 }
 
+const styles = StyleSheet.create({
+  scrollView: {
+    width: '100%',
+    marginTop: 20,
+  },
+});
+
 const ProjectList: React.FC<props> = props => {
   return (
-    <ScrollView>
+    <ScrollView style={styles.scrollView}>
       {props.projects.map(project => (
         <Project key={project.id} project={project} />
       ))}
