@@ -6,12 +6,9 @@ import { name as appName } from '../../app.json';
 import Header from 'components/Header';
 import ProjectList from 'components/ProjectList';
 
-interface IProject {
-  id: number;
-  name: string;
-}
+import { Project } from 'src/commons/types.js';
 
-const projectArray: Array<IProject> = [
+const projectArray: Array<Project> = [
   { id: 1, name: 'Lorem Ipsum' },
   { id: 2, name: 'Lorem Ipsum 2' },
   { id: 3, name: 'Lorem Ipsum 3' },

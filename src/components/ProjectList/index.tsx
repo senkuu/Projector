@@ -3,10 +3,8 @@ import { ScrollView } from 'react-native';
 
 import Project from './components/Project';
 
-interface IProject {
-  id: number;
-  name: string;
-}
+// types
+import { Project as IProject } from 'src/commons/types';
 
 interface props {
   projects: Array<IProject>;

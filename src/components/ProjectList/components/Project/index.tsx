@@ -1,10 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-
-interface IProject {
-  id: number;
-  name: string;
-}
+import { Project as IProject } from 'src/commons/types';
 
 interface props {
   project: IProject;
