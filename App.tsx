@@ -10,9 +10,14 @@
 
 import React from 'react';
 import Main from 'views/Main';
+import { View } from 'react-native';
 
 const App: React.FC = () => {
-  return <Main />;
+  return (
+    <View style={{ backgroundColor: '#f2f2f2' }}>
+      <Main />
+    </View>
+  );
 };
 
 export default App;
